@@ -4,15 +4,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="423dp"
+        android:layout_height="231dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner" />
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="483dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="3dp"
+        android:contentDescription="@string/app_name"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Blogtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blog Name"
+                    android:textAlignment="center"
+                    android:textSize="34sp" />
+
+                <ImageView
+                    android:id="@+id/blogimage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="198dp"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/blog" />
+
+                <TextView
+                    android:id="@+id/author1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Blog By :" />
+
+                <Button
+                    android:id="@+id/blogbtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Blogtitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blog Name"
+                    android:textAlignment="center"
+                    android:textSize="34sp" />
+
+                <ImageView
+                    android:id="@+id/blogimage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="198dp"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/blog" />
+
+                <TextView
+                    android:id="@+id/author2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Blog By :" />
+
+                <Button
+                    android:id="@+id/blogbtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Blogtitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blog Name"
+                    android:textAlignment="center"
+                    android:textSize="34sp" />
+
+                <ImageView
+                    android:id="@+id/blogimage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="198dp"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/blog" />
+
+                <TextView
+                    android:id="@+id/author3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Blog By :" />
+
+                <Button
+                    android:id="@+id/blogbtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
